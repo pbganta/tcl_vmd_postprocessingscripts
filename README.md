@@ -1,16 +1,11 @@
-# vmd_postprocessingscripts
+`# vmd_postprocessingscripts
 VMD post-processing script with custom functions to extract, transform and use quantum simulation data. To calculate quantum simulations related properties.
 
 To use:
-# load file
+# load file and molecules
 ```
 
 source analysis_vmd.tcl
-
-```
-# load molecules
-```
-
 mol new molecule1.psf
 mol addfile molecule1.pdb waitfor -1
 set n [molinfo top get id]
@@ -23,7 +18,7 @@ set sel1 [atomselect top "resname DIA"]
 set sel2 [atomselect top "resname LIG"]
 
 ```
-# how to use functions
+# functions use
 ```
 
 align_fixedatoms $n top $fixed $fixed
