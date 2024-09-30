@@ -1,4 +1,3 @@
-`# vmd_postprocessingscripts
 VMD post-processing script with custom functions to extract, transform and use quantum simulation data. To calculate quantum simulations related properties.
 
 To use:
